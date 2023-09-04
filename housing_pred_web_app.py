@@ -45,8 +45,10 @@ def main():
     kamar_mandi = st.text_input('Jumlah Kamar Mandi')
     garasi = st.text_input('Garasi muat berapa mobil')
     lokasi = st.text_input('Lokasi')
+    lokasi = str.title(lokasi)
     kota = st.text_input('Kota')
-    
+    kota = str.title(kota)
+
     
     # code for Prediction
     prediksi = ''
@@ -56,9 +58,6 @@ def main():
     if st.button('Prediksi Harga Rumah'):
         prediksi = housing_pred([kamar_tidur, kamar_mandi, garasi, luasb, luast,lokasi, kota ])
         
-        
-    st.success(prediksi)
-    
     
     
     
