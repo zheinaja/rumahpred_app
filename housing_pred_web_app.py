@@ -5,7 +5,7 @@ Created on Mon Sep  4 12:57:21 2023
 @author: Program
 """
 
-import numpy as nip
+import numpy as np
 import pickle
 import streamlit
 
