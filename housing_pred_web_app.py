@@ -7,7 +7,7 @@ Created on Mon Sep  4 12:57:21 2023
 
 import numpy as np
 import pickle
-import streamlit
+import streamlit as st
 import catboost
 from catboost import CatBoostRegressor, Pool, cv
 
