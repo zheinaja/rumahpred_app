@@ -12,8 +12,8 @@ import catboost
 from catboost import CatBoostRegressor, Pool, cv
 
 # loading save model
-model_jual = pickle.load(open('Prediksi_Harga_Jual_Perumahan.pkl','rb'))
-model_sewa = pickle.load(open('Prediksi_Sewa_Perumahan.pkl','rb'))
+model_jual = pickle.load(open('Prediksi Harga Jual Perumahan.sav','rb'))
+model_sewa = pickle.load(open('Prediksi Sewa Perumahan.sav','rb'))
 
 
 # creating a function for prediction
