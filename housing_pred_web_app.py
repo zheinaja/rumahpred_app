@@ -8,8 +8,6 @@ Created on Mon Sep  4 12:57:21 2023
 import numpy as np
 import pickle
 import streamlit
-import catboost
-from catboost import CatBoostRegressor, Pool, cv
 
 # loading save model
 model_jual = pickle.load(open('Prediksi_Harga_Jual_Perumahan.pkl','rb'))
