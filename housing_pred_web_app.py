@@ -21,18 +21,15 @@ model_sewa = pickle.load(open('Prediksi Sewa Perumahan.sav','rb'))
 def housing_pred(test):
     
     hasil_jual = model_jual.predict(test)
-    hasil_jual = hasil_jual/1000000
-    hasil_jual
-    
+    hasil_jual = hasil_jual/1000000    
     hasil_sewa = model_sewa.predict(test)
     hasil_sewa = hasil_sewa/1000000
-    hasil_sewa
 
-    print(f'Rumah LB: {test[3]}, LT:{test[4]} dengan:')
-    print(f'{test[0]} Kamar Tidur, {test[1]} Kamar Mandi, Garasi kapasitas {test[2]} mobil')
-    print(f'di {test[5]}, {test[6]}')
-    print(f'mempunyai harga jual sebesar Rp{hasil_jual:,.2f} Juta')
-    print(f' dan harga sewa sebesar Rp{hasil_sewa:,.2f} Juta')
+    st.write(f'Rumah LB: {test[3]}, LT:{test[4]} dengan:')
+    st.write(f'{test[0]} Kamar Tidur, {test[1]} Kamar Mandi, Garasi kapasitas {test[2]} mobil')
+    st.write(f'di {test[5]}, {test[6]}')
+    st.write(f'mempunyai harga jual sebesar Rp{hasil_jual:,.2f} Juta')
+    st.write(f' dan harga sewa sebesar Rp{hasil_sewa:,.2f} Juta')
 
 
 def main():
