@@ -34,7 +34,7 @@ def housing_pred(test):
 
 def main():
     # giving a title
-    st.title('Prediksi Harga Jual dan Sewa Rumah')
+    st.title('Prediksi Harga Jual dan Sewa Rumah Jabodetabek')
     
     
     # getting the input data from the user
@@ -46,8 +46,9 @@ def main():
     garasi = st.text_input('Garasi muat berapa mobil')
     lokasi = st.text_input('Lokasi')
     lokasi = str.title(lokasi)
-    kota = st.text_input('Kota')
-    kota = str.title(kota)
+    kota = st.selectbox(
+    'Nama Kota',
+    ('Bekasi','Depok','Bogor','Tangerang','Tangerang Selatan','Jakarta Selatan', 'Jakarta Barat', 'Jakarta Timur', 'Jakarta Utara', 'Jakarta Pusat'))
 
     
     # code for Prediction
