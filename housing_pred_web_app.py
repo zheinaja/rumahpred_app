@@ -34,7 +34,7 @@ def housing_pred(test):
 
 def main():
     # giving a title
-    st.title('Prediksi Harga Jual dan Sewa Rumah Jabodetabek')
+    st.title('Zhein's Prediksi Harga Jual dan Sewa Rumah Jabodetabek')
     
     
     # getting the input data from the user
