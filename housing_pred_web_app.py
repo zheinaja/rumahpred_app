@@ -44,7 +44,7 @@ def main():
     kamar_tidur = st.text_input('Jumlah Kamar Tidur')
     kamar_mandi = st.text_input('Jumlah Kamar Mandi')
     garasi = st.text_input('Garasi muat berapa mobil')
-    lokasi = st.text_input('Lokasi')
+    lokasi = st.text_input('Kecamatan atau Lokasi')
     lokasi = str.title(lokasi)
     kota = st.selectbox(
     'Nama Kota',
